@@ -19,7 +19,7 @@ def calc_dependentes(num_dependentes):
     return desc_dependentes
 
 # Essa função faz o cálculo do imposto de renda
-def imposto_de_renda(salario_bruto):
+def imposto_de_renda(salario_bruto, num_dependentes):
     if salario_bruto <= 1400.00:
         return 0.0
     if salario_bruto <= 2500.00:
@@ -33,7 +33,7 @@ sal_bruto = input('Digite o salário bruto: ')
 num_dependentes = input('Digite o número de dependentes: ')
 
 def calc_salario_liquido(sal_bruto):
-    salario_liquido = sal_bruto - calcula_inss(sal_bruto) - imposto_de_renda(sal_bruto)
+    salario_liquido = sal_bruto - calcula_inss(sal_bruto) - imposto_de_renda(sal_bruto, num_dependentes)
     return salario_liquido
 
 print(calc_salario_liquido(sal_bruto))
