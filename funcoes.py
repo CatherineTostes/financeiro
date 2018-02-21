@@ -25,9 +25,9 @@ def imposto_de_renda(salario_bruto):
     if salario_bruto <= 2500.00:
         return (salario_bruto * 0.12) - calcula_inss(sal_bruto) - calc_dependentes(num_dependentes)
     if salario_bruto <= 5000.00:
-        return (salario_bruto * 0.2) - calcula_inss(sal_bruto) - calc_dependentes(num_dependetes)
+        return (salario_bruto * 0.2) - calcula_inss(sal_bruto) - calc_dependentes(num_dependentes)
     else:
-        return (salario_bruto * 0.27) - calcula_inss(sal_bruto) - calc_dependentes(num_dependetes)
+        return (salario_bruto * 0.27) - calcula_inss(sal_bruto) - calc_dependentes(num_dependentes)
 
 sal_bruto = input('Digite o salário bruto: ')
 num_dependentes = input('Digite o número de dependentes: ')
