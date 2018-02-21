@@ -17,3 +17,13 @@ def dependentes(numero_dependentes):
     desconto = 100.00
     desconto_dependentes = desconto * numero_dependentes
     return desconto_dependentes
+
+def imposto de renda(salario_liquido):
+    if salario_liquido <= 1400.00:
+        return 0.0
+    if salario_liquido <= 2500.00:
+        return salario_liquido * 0.12
+    if salario_liquido <= 5000.00:
+        return salario_liquido * 0.2
+    else:
+        return salario_liquido * 0.27
